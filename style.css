@@ -12,44 +12,90 @@ social-icons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(170px, auto);
+    padding: 30px;
 }
 
 .one {
-    border: solid 2px red;
+    /* margin: auto; */
+    border: solid 2px rgb(100, 100, 100);
     grid-column: 1/4;
     grid-row: 1;
     background-image: url('./Images/poster1.jpg');
 }
 
 .two {
-    border: solid 2px red;
+    /* margin: auto; */
+    border: solid 2px rgb(100, 100, 100);
     grid-column: 4;
     grid-row: 1;
+    text-align: justify;
+    padding: 30px;
+
 }
 
 .three {
-    border: solid 2px red;
+    /* margin: auto; */
+    border: solid 2px rgb(100, 100, 100);
     grid-column: 1;
     grid-row: 2;
+    text-align: justify;
+    padding: 30px;
+
 }
 
 .four {
-    border: solid 2px red;
+    /* margin: auto; */
+    border: solid 2px rgb(100, 100, 100);
     grid-column: 2/5;
     grid-row: 2;
     background-image: url('./Images/poster2.jpg');
 
+
 }
 
 .five {
-    border: solid 2px red;
+    /* margin: auto; */
+    border: solid 2px rgb(100, 100, 100);
     grid-column: 1/4;
     grid-row: 3;
+    text-align: justify;
+
 }
 
 .six {
-    border: solid 2px red;
+    /* margin: auto; */
+    border: solid 2px rgb(100, 100, 100);
+    grid-column: 4;
+    grid-row: 3;
+    text-align: justify;
+    padding: 30px;
+}
+
+.seven {
+    /* margin: auto; */
+    border: solid 2px rgb(100, 100, 100);
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.eight {
+    /* margin: auto; */
+    border: solid 2px rgb(100, 100, 100);
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.nine {
+    /* margin: auto; */
+    border: solid 2px rgb(100, 100, 100);
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.ten {
+    /* margin: auto; */
+    border: solid 2px rgb(100, 100, 100);
     grid-column: 4;
     grid-row: 3;
 }
@@ -57,9 +103,105 @@ social-icons {
 body {
     margin-left: 3%;
     margin-right: 3%;
+    background-color: aliceblue;
 }
 
 footer {
     display: flex;
     justify-content: center;
+}
+
+.signUpOne {
+    border: solid 2px rgb(100, 100, 100);
+    grid-column: 1/3;
+    grid-row: 1;
+    background-image: url('./Images/signup1.jpg');
+}
+
+.poster {
+    max-width: 100%;
+}
+
+.signUpTwo {
+    border: solid 2px rgb(100, 100, 100);
+    grid-column: 1/3;
+    grid-row: 2;
+    background-image: url('./Images/signup2.jpg');
+}
+
+.signUpThree {
+    border: solid 2px rgb(100, 100, 100);
+    grid-column: 1/3;
+    grid-row: 3;
+    background-image: url('./Images/signup2.jpg');
+}
+
+.signUpForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px rgb(100, 100, 100);
+    grid-column: 3/5;
+    grid-row: 1/4;
+    justify-content: center;
+}
+
+form {
+    width: 60%;
+    margin: 10px;
+
+}
+
+
+
+input {
+    margin: 3%;
+    align-items: center;
+}
+
+select {
+    margin: 3%;
+    align-items: center;
+}
+
+input[type="submit"] {
+    background-color: #0b6ab3;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-item {
+    align-self: start;
+    /* color: */
+}
+
+.trim {
+    max-height: 200px;
+    overflow: hidden;
+    object-fit: fill;
+}
+
+.w-100 {
+    height: 100% !important;
+}
+
+.row>* {
+    padding: 0;
+}
+
+.add-border {
+    border: solid 2px rgb(100, 100, 100);
+}
+
+.active {
+    text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    width: 100%;
 }

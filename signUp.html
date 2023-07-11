@@ -18,7 +18,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg  body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -26,19 +26,19 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav" justi>
                         <li class="nav-item">
                             <img src="./Images/star.png" alt="Star Logo" width="30" height="24"
                                 class="d-inline-block align-text-top">
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home Page</a>
+                            <a class="nav-link" href="./index.html">Home Page</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./whatsOn.html">What's on</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./signUp.html">Sign Up</a>
+                            <a class="nav-link active" aria-current="page" href="#">Sign Up</a>
                         </li>
                     </ul>
                 </div>
@@ -47,29 +47,38 @@
     </header>
 
     <div class="grid-container">
-        <div class="one">
-            <img class="poster" src="./Images/poster1.jpg" alt="Movie Poster: Transformers">
+        <div class="signUpOne signUpPoster">
+            <img class="poster" src="./Images/signup1.jpg" alt="Movie Poster">
         </div>
-        <div class="two">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt mollitia quam voluptas harum? Adipisci nemo
-            placeat accusantium non. Ab obcaecati dignissimos voluptatem ullam quis explicabo recusandae, quod nobis
-            distinctio odio.
+        <div class="signUpTwo signUpPoster">
+            <img class="poster" src="./Images/signup2.jpg" alt="Movie Poster">
         </div>
-        <div class="three">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quis itaque quae, accusantium suscipit
-            fugit dolores recusandae officiis magnam. Ea exercitationem ex repudiandae commodi dolores dicta impedit
-            laboriosam porro esse.
-        </div>
-        <div class="four">
-            <img class="poster" src="./Images/poster2.jpg" alt="Movie Poster: Cinema">
-        </div>
-        <div class="five">
+        <div class="signUpThree">
             <img class="poster" src="./Images/signup3.jpg" alt="Movie Poster">
         </div>
-        <div class="six">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt mollitia quam voluptas harum? Adipisci nemo
-            placeat accusantium non. Ab obcaecati dignissimos voluptatem ullam quis explicabo recusandae, quod nobis
-            distinctio odio.
+        <div class="signUpForm">
+            <form>
+                <label for="Title" class="col-sm-4">Title</label>
+                <select id="Title" class="col-sm-7">
+                    <option>Mr</option>
+                    <option>Ms</option>
+                    <option>Mrs</option>
+                    <option>Miss</option>
+                    <option>Other</option>
+                </select><br>
+                <label for="FirstName" class="col-sm-4">First Name*</label>
+                <input type="text" name="FirstName" id="FirstName" class="col-sm-7" placeholder="First Name"><br>
+                <label for="LastName" class="col-sm-4">Last Name*</label>
+                <input type="text" name="LastName" id="LastName" class="col-sm-7" placeholder="Last Name"><br>
+                <label for="Email" class="col-sm-4">Email*</label>
+                <input type="email" name="Email" id="Email" class="col-sm-7" placeholder="Email"><br>
+                <label for="Date" class="col-sm-4">Date</label>
+                <input type="date" name="Date" id="Date" class="col-sm-7" placeholder="DOB"><br>
+                <label for="Phone" class="col-sm-4">Phone*</label>
+                <input type="tel" name="Phone" id="Phone" class="col-sm-7" placeholder="Phone">
+                <label for="Submit" class="col-sm-4"></label>
+                <input type="submit" name="Submit" id="Submit" value="Sign Me Up">
+            </form>
         </div>
     </div>
 

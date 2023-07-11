@@ -18,7 +18,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg  body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -32,10 +32,10 @@
                                 class="d-inline-block align-text-top">
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home Page</a>
+                            <a class="nav-link" href="./index.html">Home Page</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./whatsOn.html">What's on</a>
+                            <a class="nav-link active" aria-current="page" href="#">What's on</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./signUp.html">Sign Up</a>
@@ -46,30 +46,71 @@
         </nav>
     </header>
 
-    <div class="grid-container">
-        <div class="one">
-            <img class="poster" src="./Images/poster1.jpg" alt="Movie Poster: Transformers">
+    <div class="container">
+        <div class="row my-3">
+            <div class="col-lg-10">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active trim">
+                            <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/11/avatar-the-way-of-water-poster.jpg"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item trim">
+                            <img src="https://tinyurl.com/4k34ubvd" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item trim">
+                            <img src="https://tinyurl.com/mpkknf95" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item trim">
+                            <img src="https://tinyurl.com/4zhr5tyd" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-2 add-border">
+                <p>Now Showing</p>
+            </div>
         </div>
-        <div class="two">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt mollitia quam voluptas harum? Adipisci nemo
-            placeat accusantium non. Ab obcaecati dignissimos voluptatem ullam quis explicabo recusandae, quod nobis
-            distinctio odio.
+        <div class="row">
+            <div class="col-lg-2 add-border">
+                <p>Opening Times</p>
+                <p>Mon - Fri</p>
+            </div>
+            <div class="col-lg-10 trim">
+                <img src="https://tinyurl.com/4k34ubvd" class="w-100" alt="...">
+            </div>
         </div>
-        <div class="three">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quis itaque quae, accusantium suscipit
-            fugit dolores recusandae officiis magnam. Ea exercitationem ex repudiandae commodi dolores dicta impedit
-            laboriosam porro esse.
-        </div>
-        <div class="four">
-            <img class="poster" src="./Images/poster2.jpg" alt="Movie Poster: Cinema">
-        </div>
-        <div class="five">
-            <img class="poster" src="./Images/signup3.jpg" alt="Movie Poster">
-        </div>
-        <div class="six">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt mollitia quam voluptas harum? Adipisci nemo
-            placeat accusantium non. Ab obcaecati dignissimos voluptatem ullam quis explicabo recusandae, quod nobis
-            distinctio odio.
+        <div class="row my-3">
+            <div class="col-lg-3 trim">
+                <img src="https://tinyurl.com/4k34ubvd" class="w-100" alt="...">
+            </div>
+            <div class="col-lg-3 add-border">
+                <p>Movie Title</p>
+            </div>
+            <div class="col-lg-3 add-border">
+                <p>Movie Synopsis</p>
+            </div>
+            <div class="col-lg-3 add-border">
+                <p>Screen and Showing Times <br>Standard <br>3D <br>4DX <br>Super IMAX</p>
+            </div>
         </div>
     </div>
 

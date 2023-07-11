@@ -1,0 +1,65 @@
+nav-item {
+    right: 0;
+}
+
+social-icons {
+    display: flex;
+    justify-content: space-around;
+    bottom: 0%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.one {
+    border: solid 2px red;
+    grid-column: 1/4;
+    grid-row: 1;
+    background-image: url('./Images/poster1.jpg');
+}
+
+.two {
+    border: solid 2px red;
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.three {
+    border: solid 2px red;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.four {
+    border: solid 2px red;
+    grid-column: 2/5;
+    grid-row: 2;
+    background-image: url('./Images/poster2.jpg');
+
+}
+
+.five {
+    border: solid 2px red;
+    grid-column: 1/4;
+    grid-row: 3;
+}
+
+.six {
+    border: solid 2px red;
+    grid-column: 4;
+    grid-row: 3;
+}
+
+body {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
